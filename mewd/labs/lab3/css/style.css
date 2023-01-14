@@ -13,7 +13,7 @@
 
 :root {
     --text-color: #EDDBC0;
-    --bg-color: #ba4040;
+    --bg-color: #6d4e4e;
     --main-color: #B73E3E;
     --sub-color: #DBC8AC;
     --box--shadow: 2px 4px 10px 4px rgb(14 55 54 / 15%)
@@ -32,7 +32,7 @@ body{
 }
 
 header {
-    background-color: #5f060673;
+    background-color: #061b5f73;
     width: 100%;
     position: fixed;
     top: 0;
@@ -86,7 +86,6 @@ header.shadow {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(/Labs/lab3/img/bucha-1.jpg);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
     align-items: center;
