@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELP ZSU</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/93cedfda6d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <a href="#start" class="flag">
+            <img src="./img/flag.jpg" alt="UAFlag" width="60px">
+        </a>
+        <i class="fa-solid fa-caret-down" id="menu"></i>
+        <ul class="navigation">
+            <li><a href="#start" id="start1">Home</a></li>
+            <li><a href="#store" id="store1">Buy</a></li>
+            <li><a href="#basket" id="basket1">Basket</a></li>
+        </ul>
+    </header>
+
+    <section class="start" id="start">
+        <!-- the beggining of page -->
+        <div class="beggining">
+            <div class="head_1">
+                <h1>#russia_is_a_terrorist_state</h1>
+            </div>
+            <div class="head-2">
+                <p> Don`t forget about this and help Ukrainian army drive the enemy out of our land </p>
+            </div>
+        </div>
+    </section>
+    <section class="Store" id="store">
+        <div class="store-heading">
+            <h2>gas station store</h2>
+        </div>
+        <div class="items">
+            <div class="container">
+                <h3>MP-323</h3>
+                <img src="./img/1.jpg" alt="classic">
+                <div class="content">
+                    <span>$330</span>
+                </div>
+            </div>
+            <div class="container">
+                <h3>BP-632</h3>
+                <img src="./img/2.jpg" alt="classic">
+                <div class="content">
+                    <span>$260</span>
+                </div>
+            </div>
+            <div class="container">
+                <h3>UST-43</h3>
+                <img src="./img/3.jpg" alt="ust-43">
+                <div class="content">
+                    <span>$440</span>
+                </div>
+            </div>
+            <div class="container">
+                <h3>UST-56</h3>
+                <img src="./img/4.jpg" alt="classic">
+                <div class="content">
+                    <span>$360</span>
+                </div>
+    </section>
+    <section class="basket" id="basket">
+        <!-- Your basket -->
+        <div>
+            <h2>Your Basket</h2>
+        </div>
+        <div class="table">
+            <table class="cart_table" id="cart_table">
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Quantity</th>
+                        <th>Amount</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="model_img"><img src="./img/1.jpg"></div>
+                        </td>
+                        <td>
+                            <p>MP-323</p>
+                        </td>
+                        <td>
+                            <div class="btn_container">
+                                <button class="cart_qty_minus" type="button" value="-">
+                                    <i class="fa-solid fa-square-minus"></i>
+                                </button>
+                                <input type="text" name="qty" min="0" class="qty form_control" value="0">
+                                <button class="cart_qty_plus" type="button" value="+"> <i class="fa-solid
+                                    fa-square-plus"></i></button>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" value="33" class="price form_control" disabled>
+                        </td>
+                        <td align="right">$<span id="amount" class="amount">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="model_img"><img src="./img/2.jpg"></div>
+                        </td>
+                        <td>
+                            <p>BP-632</p>
+                        </td>
+                        <td>
+                            <div class="btn_container">
+                                <button class="cart_qty_minus" type="button" value="-">
+                                    <i class="fa-solid fa-square-minus"></i>
+                                </button>
+                                <input type="text" name="qty" min="0" class="qty form_control" value="0">
+                                <button class="cart_qty_plus" type="button" value="+"> <i class="fa-solid
+                                    fa-square-plus"></i></button>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" value="26" class="price form_control" disabled>
+                        </td>
+                        <td align="right">$<span id="amount" class="amount">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="model_img"><img src="./img/3.jpg"></div>
+                        </td>
+                        <td>
+                            <p>UST-43</p>
+                        </td>
+                        <td>
+                            <div class="btn_container">
+                                <button class="cart_qty_minus" type="button" value="-">
+                                    <i class="fa-solid fa-square-minus"></i>
+                                </button>
+                                <input type="text" name="qty" min="0" class="qty form_control" value="0">
+                                <button class="cart_qty_plus" type="button" value="+"> <i class="fa-solid
+                                    fa-square-plus"></i></button>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" value="44" class="price form_control" disabled>
+                        </td>
+                        <td align="right">$<span id="amount" class="amount">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="model_img_extra"><img src="./images/4.jpg"></div>
+                        </td>
+                        <td>
+                            <p>UST-56</p>
+                        </td>
+                        <td>
+                            <div class="btn_container">
+                                <button class="cart_qty_minus" type="button" value="-">
+                                    <i class="fa-solid fa-square-minus"></i>
+                                </button>
+                                <input type="text" name="qty" min="0" class="qty form_control" value="0">
+                                <button class="cart_qty_plus" type="button" value="+"> <i class="fa-solid
+                                    fa-square-plus"></i></button>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" value="36" class="price form_control" disabled>
+                        </td>
+                        <td align="right">$<span id="amount" class="amount">0</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"></td>
+                        <td align="right"><strong>TOTAL = $ <span id="total" class="total">0</span></strong></td>
+                    </tr>
+
+                </tfoot>
+            </table>
+        </div>
+    </section>
+    <section>
+        <div class="heading">
+            <h2>Our team</h2>
+        </div>
+        <div class="team_container">
+            <div class="box">
+                <h2>Mark Diduch</h2>
+                <img src="./img/Mark.jpg">
+                <p>
+                    Mark is one of our first employee. Our big manager whom you can contact for doing some deal
+                </p>
+            </div>
+            <div class="box">
+                <h2>Maria Koldun</h2>
+                <img src="./img/Masha.jpg">
+                <p>
+                    Masha is a woman from Kharkiv who helps us to supply our Millitary with fuel
+                </p>
+            </div>
+            <div class="box">
+                <h2>Genadiy Maystrenko</h2>
+                <img src="./img/Genadiy.jpg">
+                <p>
+                    Genadiy is our savior. He has already promoted our store for every gas station in Kyiv
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer_box">
+            <h2>Don't forget to donate</h2>
+            <p>
+                If you want to find us on media and to join our community, you can use
+                these platforms
+            </p>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></i></a>
+            </div>
+        </div>
+        <div class="footer_box">
+            <h2>Support</h2>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+        </div>
+        <div class="footer_box">
+            <h2>View Guides</h2>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog Posts</a></li>
+            <li><a href="#">United24</a></li>
+        </div>
+        <div class="footer_box">
+            <h3>Contact</h3>
+            <div class="contact">
+                <span><i class="fa-solid fa-map"></i>Kyiv, Ukraine</span>
+                <span><i class="fa-solid fa-phone"></i>(+38) 066 772 1682</span>
+                <span><i class="fa-solid fa-handshake-angle"></i></i>volunteer24ua@shop.com</span>
+            </div>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>
+            &#169; All Rights Reserved
+        </p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
