@@ -497,37 +497,3 @@ table{
         font-size: 1.2rem;
     }
 }
-
-.reviews{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
-    background-color: #DBC8AC;
-}
-
-.comment{
-    padding: 10px 20px;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: var(--main-color);
-    border-radius: 10px; 
-}
-.comment h3{
-    text-align: center;
-    color: #c2b199;
-    background-color: #390a0aa8;
-    box-shadow: var(--box--shadow);
-    border-radius: 10px;
-}
-
-.card {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
-}
-
-.cloud{
-    display: inline;
-}
-
-.weathers{
-    background-color: #d0bd9abb;
-}
